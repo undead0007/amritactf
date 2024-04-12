@@ -1,0 +1,91 @@
+<!DOCTYPE html> <html> <head> <title>Amita CTF Challenge</title> <style> body { font-family: Arial, sans-serif; background-color: #f0f0f0; margin: 0; padding: 0; } .container { width: 80%; margin: 0 auto; background-color: #fff; padding: 20px; border: 1px solid #ccc; box-shadow: 0 0 10px rgba(0,0,0,0.1); margin-top: 50px; margin-bottom: 50px; } .question { font-size: 20px; margin-bottom: 10px; color: #333; } .file { margin-bottom: 20px; background-color: #f5f5f5; padding: 10px; border-left: 5px solid #337ab7; } .file a { color: #337ab7; text-decoration: none; } .tab { overflow: hidden; border: 1px solid #ccc; background-color: #f1f1f1; } .tab button { background-color: inherit; float: left; border: none; outline: none; cursor: pointer; padding: 14px 16px; transition: 0.3s; font-size: 17px; } .tab button:hover { background-color: #ddd; } .tab button.active { background-color: #ccc; } .tabcontent { display: none; padding: 6px 12px; border: 1px solid #ccc; border-top: none; } </style> </head> <body> <div class="tab"> <button class="tablinks" onclick="openTab(event, 'CTF')">CTF Challenge</button> <button class="tablinks" onclick="openTab(event, 'Rules')">Rules</button> <button class="tablinks" onclick="openTab(event, 'FAQ')">FAQ</button> </div>
+
+<div id="CTF" class="tabcontent">
+    <div class="container">
+        <div class="question">Question 1: What is the flag in the file below?</div>
+        <div class="file"><a href="file1.txt">File 1</a></div>
+
+        <div class="question">Question 2: What is the flag in the file below?</div>
+        <div class="file"><a href="file2.txt">File 2</a></div>
+
+        <div class="question">Question 3: What is the flag in the file below?</div>
+        <div class="file"><a href="file3.txt">File 3</a></div>
+
+        <div class="question">Question 4: What is the flag in the file below?</div>
+        <div class="file"><a href="file4.txt">File 4</a></div>
+
+        <div class="question">Question 5: What is the flag in the file below?</div>
+        <div class="file"><a href="file5.txt">File 5</a></div>
+
+        <div class="question">Question 6: What is the flag in the file below?</div>
+        <div class="file"><a href="file6.txt">File 6</a></div>
+
+        <div class="question">Question 7: What is the flag in the file below?</div>
+        <div class="file"><a href="file7.txt">File 7</a></div>
+
+        <div class="question">Question 8: What is the flag in the file below?</div>
+        <div class="file"><a href="file8.txt">File 8</a></div>
+
+        <div class="question">Question 9: What is the flag in the file below?</div>
+        <div class="file"><a href="file9.txt">File 9</a></div>
+
+        <div class="question">Question 10: What is the flag in the file below?</div>
+        <div class="file"><a href="file10.txt">File 10</a></div>
+    </div>
+</div>
+
+<div id="Rules" class="tabcontent">
+    <h3>Rules</h3>
+    <p>Here are the rules for the CTF challenge:</p>
+    <ol>
+        <li>Do not attack any systems or services that are not explicitly part of the CTF challenge.</li>
+        <li>Do not brute force user accounts or attempt to gain unauthorized access to any system or network.</li>
+        <li>Do not share flags or solutions with other teams or individuals.</li>
+        <li>Do not modify any system or configuration during the CTF challenge.</li>
+        <li>Violations of these rules may result in disqualification and/or account suspension.</li>
+    </ol>
+</div>
+
+<div id="FAQ" class="tabcontent">
+    <h3>FAQ</h3>
+    <p>Here are some frequently asked questions:</p>
+    <ul>
+        <li>
+            Q: Who can participate in the CTF challenge?<br>
+            A: Anyone with an interest in cybersecurity can participate in the CTF challenge.
+        </li>
+        <li>
+            Q: Do I need previous experience in cybersecurity to participate?<br>
+            A: No, the CTF challenge is designed to be accessible to beginners as well as experienced cybersecurity professionals.
+        </li>
+        <li>
+            Q: How long is the CTF challenge open?<br>
+            A: The CTF challenge is open for 48 hours.
+        </li>
+        <li>
+            Q: How do I submit my solutions?<br>
+            A: You can submit your solutions through the submission page.
+        </li>
+        <li>
+            Q: What are the prizes for the CTF challenge?<br>
+            A: The top 3 teams with the most points will receive a cash prize and a certificate of achievement.
+        </li>
+    </ul>
+</div>
+
+<script>
+    function openTab(evt, tabName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+</script>
+</body> </html>
